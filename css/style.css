@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    background-color: black;
+    text-transform: uppercase;
+}
+h1{
+    text-align: center;
+}
+h3{
+    margin: 5px;
+}
+.habilidades{
+    background-color: #1b1b1b;
+    width: 500px;
+    margin: 60px auto;
+    color: white;
+    padding: 20px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.habilidades li{
+    margin: 20px 0;
+    padding: 10px;
+}
+.barrinha{
+    background-color: #353b48;
+    display: block;
+    height: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.3) rgba(0, 0, 0, 0.22);
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25 1);
+}
+.barrinha:hover{
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.barrinha span{
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg, rgb(50, 105, 150) 0%, rgb(10, 36, 121)100%);
+}
+
+/* Colocando o tamanho da barra */
+
+.html{
+    width: 90%;
+    animation: html 3s linear;
+}
+.css{
+    width: 75%;
+    animation: css 3s linear;
+}
+.javascript{
+    width: 60%;
+    animation: js 3s linear;
+}
+.php{
+    width: 2%;
+    animation: php 3s linear;
+}
+/* Animação das barrinhas */
+
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 75%;
+    }
+}
+@keyframes js{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+@keyframes  php{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 2%;
+    }
+}
